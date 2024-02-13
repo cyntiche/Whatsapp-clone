@@ -1,0 +1,39 @@
+.Title-bar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* background-color: #202020; */
+      padding: 0px 12px;
+}
+.whatsapp-logo{
+      height: 20px;
+      padding-right: 10px;
+}
+.logo-container{
+      display: flex;
+      align-items: center;
+      
+      
+}
+.title{
+      color: white;
+      font-weight: lighter;
+      font-size: 12px;
+      margin: 0px;
+
+}
+.icons{
+      max-width: 500px;
+      justify-content: space-around;
+}
+.icons .icon-bar{
+      padding-left: 10px;
+      color: white;
+      appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+}
