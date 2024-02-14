@@ -12,7 +12,7 @@ const TitleBar = () => {
     <div className="Title-bar">
       <div className="logo-container">
         <img src={whatsappLogo} alt="" className="whatsapp-logo" />
-        <h5 className="title">WhatsApp</h5>
+        <h5 className="title-whatsapp">WhatsApp</h5>
       </div>
       <div className="icons">
       <button className="icon-bar">{FluentSubtract48Regular()}</button>

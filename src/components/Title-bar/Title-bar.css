@@ -1,9 +1,15 @@
 .Title-bar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      /* background-color: #202020; */
-      padding: 0px 12px;
+      padding: 10px 12px;
+      background-color: #202020;
+
 }
 .whatsapp-logo{
       height: 20px;
@@ -15,7 +21,7 @@
       
       
 }
-.title{
+.title-whatsapp{
       color: white;
       font-weight: lighter;
       font-size: 12px;

@@ -1,19 +1,25 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
-  padding: 10px 0px;
   background-color: #202020;
-  height: 100%;
   width: 100%;
   margin: 0;
 
 }
-#root {
+/* #root {
   display: flex;
   flex-direction: column;
+} */
+.content-container{
+  display: flex;
+  width: 100%;
+  /* align-content: center; */
+
+  
+
 }
-
-
-
 
 
 
