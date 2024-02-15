@@ -4,13 +4,13 @@ import Chat from "@iconify/icons-fluent/chat-24-regular";
 import HeartCircleHint from "@iconify/icons-fluent/heart-circle-hint-24-regular";
 import Settings from "@iconify/icons-fluent/settings-24-regular";
 import Star from "@iconify/icons-fluent/star-24-regular";
-import { Icon, IconifyIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import { Box, Tooltip } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
-import Stack from "@mui/material/Stack";
+import { ILayoutIcons } from "../../Interfaces";
 
 const SideBar = () => {
-  const iconsTop: { title: string; icon: IconifyIcon; color: string }[] = [
+  const iconsTop: ILayoutIcons[] = [
     {
       title: "Chat",
       icon: Chat,
@@ -27,7 +27,7 @@ const SideBar = () => {
       color: "white",
     },
   ];
-  const iconsBotton: { title: string; icon: IconifyIcon; color: string }[] = [
+  const iconsBotton: ILayoutIcons[] = [
     {
       title: "Star",
       icon: Star,
