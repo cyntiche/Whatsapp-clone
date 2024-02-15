@@ -1,10 +1,11 @@
+import { Box } from '@mui/material';
 import TitleBar from './components/TitleBar/TitleBar';
 
 function App() {
   return (
-    <div>
+    <Box style={{ maxHeight: '100svh' }}>
       <TitleBar />
-    </div>
+    </Box>
   );
 }
 
