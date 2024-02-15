@@ -1,8 +1,9 @@
+import TitleBar from './components/TitleBar/TitleBar';
 
 function App() {
   return (
     <div>
-      App
+      <TitleBar />
     </div>
   );
 }
