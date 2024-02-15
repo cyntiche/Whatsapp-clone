@@ -1,11 +1,28 @@
 import copy from '@iconify/icons-fluent/copy-24-regular';
 import dismiss from '@iconify/icons-fluent/dismiss-24-regular';
 import subtract from '@iconify/icons-fluent/subtract-24-filled';
-import { Icon } from '@iconify/react';
+import { Icon, IconifyIcon } from '@iconify/react';
 import { Box, Tooltip, Typography } from '@mui/material';
 import whatsappLogo from '../../assets/whatsapp-logo.png';
 
 const TitleBar = () => {
+  const icons: { title: string; icon: IconifyIcon; color: string }[] = [
+    {
+      title: 'Minimize',
+      icon: subtract,
+      color: 'white',
+    },
+    {
+      title: 'Maximize',
+      icon: copy,
+      color: 'white',
+    },
+    {
+      title: 'Close',
+      icon: dismiss,
+      color: 'white',
+    },
+  ];
   return (
     <Box
       sx={{
@@ -49,15 +66,11 @@ const TitleBar = () => {
           columnGap: 1,
         }}
       >
-        <Tooltip arrow title="Minimize">
-          <Icon icon={subtract} color="white" />
-        </Tooltip>
-        <Tooltip arrow title="Maximize">
-          <Icon icon={copy} color="white" />
-        </Tooltip>
-        <Tooltip arrow title="Close">
-          <Icon icon={dismiss} color="white" />
-        </Tooltip>
+        {icons.map(({ title, icon, color }, index) => (
+          <Tooltip arrow title={title}>
+            <Icon icon={icon} color={color} />
+          </Tooltip>
+        ))}
       </Box>
     </Box>
   );
