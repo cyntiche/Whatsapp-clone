@@ -1,10 +1,12 @@
 import { Box } from '@mui/material';
 import TitleBar from './components/TitleBar/TitleBar';
+import SideBar from './components/SideBar/SideBar';
 
 function App() {
   return (
-    <Box style={{ maxHeight: '100svh' }}>
+    <Box style={{ height: '100svh', display:"grid", gridTemplateRows:"auto 1fr"}}>
       <TitleBar />
+      <SideBar />
     </Box>
   );
 }
