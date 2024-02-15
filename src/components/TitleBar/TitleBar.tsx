@@ -30,7 +30,7 @@ const TitleBar = () => {
         gridTemplateColumns: '1fr auto',
         justifyItems: 'start',
         alignItems: 'center',
-        backgroundColor: 'black',
+        backgroundColor: '#202020',
         padding: '10px 12px',
       }}
     >
