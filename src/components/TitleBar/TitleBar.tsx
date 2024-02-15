@@ -1,12 +1,13 @@
 import copy from '@iconify/icons-fluent/copy-24-regular';
 import dismiss from '@iconify/icons-fluent/dismiss-24-regular';
 import subtract from '@iconify/icons-fluent/subtract-24-filled';
-import { Icon, IconifyIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import { Box, Tooltip, Typography } from '@mui/material';
+import { ILayoutIcons } from '../../Interfaces';
 import whatsappLogo from '../../assets/whatsapp-logo.png';
 
 const TitleBar = () => {
-  const icons: { title: string; icon: IconifyIcon; color: string }[] = [
+  const icons: ILayoutIcons[] = [
     {
       title: 'Minimize',
       icon: subtract,
@@ -30,7 +31,7 @@ const TitleBar = () => {
         gridTemplateColumns: '1fr auto',
         justifyItems: 'start',
         alignItems: 'center',
-        backgroundColor: 'black',
+        backgroundColor: '#202020',
         padding: '10px 12px',
       }}
     >
