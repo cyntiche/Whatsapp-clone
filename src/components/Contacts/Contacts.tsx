@@ -1,16 +1,13 @@
+import Filter from "@iconify/icons-fluent/filter-24-filled";
+import WindowEdit from "@iconify/icons-fluent/window-edit-20-regular";
+import { Icon } from "@iconify/react";
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import { Box, Input, InputAdornment, ListItemButton, ListItemIcon, Tooltip, Typography } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import ListItemText from "@mui/material/ListItemText";
-import React, { useState } from "react";
-import Filter from "@iconify/icons-fluent/filter-24-filled";
-import WindowEdit from "@iconify/icons-fluent/window-edit-20-regular";
-import "./Contacts.css";
-import { Icon } from "@iconify/react";
-import { Box, Input, InputAdornment, ListItemButton, ListItemIcon, Tooltip, Typography } from "@mui/material";
 import { ILayoutIcons } from "../../Interfaces";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import "./Contacts.css";
 
 const Contacts = () => {
   const icons: ILayoutIcons[] = [
