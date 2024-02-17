@@ -1,4 +1,4 @@
-import Filter from "@iconify/icons-fluent/filter-24-filled";
+import Filter from "@iconify/icons-fluent/filter-28-regular";
 import WindowEdit from "@iconify/icons-fluent/window-edit-20-regular";
 import { Icon } from "@iconify/react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
@@ -87,7 +87,7 @@ const Contacts = () => {
           gridTemplateColumns: "1fr auto",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "16px",
+          padding: "18px",
         }}
       >
         <Box>
