@@ -5,12 +5,13 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import {
   Badge,
   Box,
+  Grid,
   Input,
   InputAdornment,
   ListItemButton,
   ListItemIcon,
   Tooltip,
-  Typography
+  Typography,
 } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import List from "@mui/material/List";
@@ -33,47 +34,48 @@ const Contacts = () => {
   ];
 
   const contacts: {
-    srcAvatar: string,
-     name: string,
-      msg: string,
-       datePrevMsg: string,
-}[] = [
+    srcAvatar: string;
+    name: string;
+    msg: string;
+    datePrevMsg: string;
+    nbMsg: number;
+  }[] = [
     {
       srcAvatar: '"/static/images/avatar/1.jpg"',
-      name: 'Besty Orange❤️',
-      msg: 'Djoukouo demain tu viens me donner mon sac',
-      datePrevMsg: 'Yesterday',
-
+      name: "Besty Orange❤️",
+      msg: "Djoukouo demain tu viens me donner mon sac",
+      datePrevMsg: "Yesterday",
+      nbMsg:1,
     },
     {
       srcAvatar: '"/static/images/avatar/1.jpg"',
-      name: 'Besty Orange❤️',
-      msg: 'Djoukouo demain tu viens me donner mon sac',
-      datePrevMsg: 'Yesterday',
-
+      name: "Besty Orange❤️",
+      msg: "Djoukouo demain tu viens me donner mon sac",
+      datePrevMsg: "Yesterday",
+      nbMsg:1,
     },
     {
       srcAvatar: '"/static/images/avatar/1.jpg"',
-      name: 'Besty Orange❤️',
-      msg: 'Djoukouo demain tu viens me donner mon sac',
-      datePrevMsg: 'Yesterday',
-
+      name: "Besty Orange❤️",
+      msg: "Djoukouo demain tu viens me donner mon sac",
+      datePrevMsg: "Yesterday",
+      nbMsg:1,
     },
     {
       srcAvatar: '"/static/images/avatar/1.jpg"',
-      name: 'Besty Orange❤️',
-      msg: 'Djoukouo demain tu viens me donner mon sac',
-      datePrevMsg: 'Yesterday',
-
+      name: "Besty Orange❤️",
+      msg: "Djoukouo demain tu viens me donner mon sac",
+      datePrevMsg: "Yesterday",
+      nbMsg:1,
     },
     {
       srcAvatar: '"/static/images/avatar/1.jpg"',
-      name: 'Besty Orange❤️',
-      msg: 'Djoukouo demain tu viens me donner mon sac',
-      datePrevMsg: 'Yesterday',
-
+      name: "Besty Orange❤️",
+      msg: "Djoukouo demain tu viens me donner mon sac",
+      datePrevMsg: "Yesterday",
+      nbMsg:1,
     },
-  ]
+  ];
 
   return (
     <Box
@@ -132,108 +134,121 @@ const Contacts = () => {
           placeholder="Search or start a new chat"
           className="search"
           startAdornment={
-            <InputAdornment position="start"
-            >
+            <InputAdornment position="start">
               <SearchOutlinedIcon
                 sx={{
                   color: "white",
                   padding: 0,
                 }}
-                />
+              />
             </InputAdornment>
           }
           sx={{
-            color:'white',
+            color: "white",
           }}
-          />
+        />
       </Box>
 
-      <Box>
-             <nav aria-label="secondary mailbox folders">
-        <List
-        sx={{
-          display:"grid",
-          alignContent:"space-between",
-          gap:"20",
-        }}
-        >
-            {contacts.map(({ srcAvatar, name, msg, datePrevMsg }, index) => (
-          <ListItem disablePadding>
 
-            <ListItemButton
-              sx={{
-                padding:"16px 16px",
-                width:'100%',
-              }}
-            >
-              <ListItemIcon>
-                <Avatar alt="Remy Sharp" src={srcAvatar}/>
-              </ListItemIcon>
-              <Box>
-
-                <Box 
-                sx={{
-                  maxWidth: '100%',
+          <Box
+            sx={{
+              display: "grid",
+              alignContent: "space-between",
+              gap: "20",
+            }}
+          >
+            {contacts.map(({ srcAvatar, name, msg, datePrevMsg,nbMsg }, index) => (
+                <Box
+                style={{
                   display: "grid",
                   gridTemplateColumns: "1fr auto",
+                  gap: "20px",
+                  padding: "12px 16px",
                   alignItems: "center",
-                  justifyContent: "space-between",
                 }}
                 >
-                  <Typography
-                    sx={{
-                      fontSize: "14px",
-                      fontWeight: 700,
-                      color: "white",
+                    <Box
+                    style={{
+                      height: '40px',
+                      width: '40px',
                     }}
+                    >
+                    <Avatar alt="Remy Sharp" src={srcAvatar} />
+                    </Box>
+
+                  <Box
+                  sx={{
+                    marginLeft:"auto",
+                  }}
                   >
-                    {name}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: "9px",
-                      fontWeight: 200,
-                      color: "#A1A1A1",
-                    }}
-                  >
-                    {datePrevMsg}
-                  </Typography>
+                    <Box
+                      sx={{
+                        width: "100%",
+                        display: "grid",
+                        gridTemplateColumns: "1fr auto",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Typography
+                        sx={{
+                          fontSize: "14px",
+                          fontWeight: 700,
+                          color: "white",
+                        }}
+                      >
+                        {name}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          fontSize: "9px",
+                          fontWeight: 200,
+                          color: "#A1A1A1",
+                        }}
+                      >
+                        {datePrevMsg}
+                      </Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr auto",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        width: "100%",
+                      }}
+                    >
+                      <Typography
+                        sx={{
+                          fontSize: "11px",
+                          fontWeight: 50,
+                          color: "#A1A1A1",
+                        }}
+                      >
+                        {msg}
+                      </Typography>
+                      <Box
+                        sx={{
+                          backgroundColor: '#1DAA61',
+                          borderRadius: '50%', 
+                          height: '16px',
+                          width: '16px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: 'black',
+                          fontSize: '9px',
+                          fontWeight: 900,
+                        }}
+                      >
+                        {nbMsg}
+                      </Box>
+                    </Box>
+                  </Box>
                 </Box>
-                <Box
-                sx={{
-                 display: "grid",
-                 gridTemplateColumns: "1fr auto",
-                 alignItems: "center",
-                 justifyContent: "space-between",
-                 width:'100%',
-                } }
-                >
-                  <Typography
-                    sx={{
-                      fontSize: "11px",
-                      fontWeight: 50,
-                      color: "#A1A1A1",
-                    }}
-                  >
-                    {msg}
-                  </Typography>
-                  <Badge
-                    badgeContent={1}
-                    color="success"
-                    
-                    sx={{
-                      height: "3px",
-                      width: "3px",
-                    }}
-                  ></Badge>
-                </Box>
-              </Box>
-            </ListItemButton>
-          </ListItem>
-        ))}
-        </List>
-      </nav>
-      </Box>
+            ))}
+          </Box>
+
+
     </Box>
   );
 };
