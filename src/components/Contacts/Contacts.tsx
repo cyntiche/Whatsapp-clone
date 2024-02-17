@@ -75,8 +75,9 @@ const Contacts = () => {
     <Box
       sx={{
         backgroundColor: "#2C2C2C",
-        width: "25%",
+        width: "100%",
         height: "100%",
+        border:"1px #1D1D1D solid",
         borderRadius: "5px 0 0 0",
       }}
     >
