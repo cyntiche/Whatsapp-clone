@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
-import React from 'react';
-import wallpaper from "../../assets/wallpaper.jpg"
+import wallpaper from "../../assets/wallpaper.jpg";
+import ChatHeader from './ChatHeader';
 
 const ChatSection = () => {
   return (
@@ -14,6 +14,7 @@ const ChatSection = () => {
       backgroundRepeat: 'no-repeat',
     }}
     >
+      <ChatHeader />
     </Box>
   );
 };
