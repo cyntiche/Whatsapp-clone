@@ -1,3 +1,7 @@
+import Call from "@iconify/icons-fluent/call-24-regular";
+import Search from "@iconify/icons-fluent/search-24-regular";
+import Video from "@iconify/icons-fluent/video-24-regular";
+import { Icon } from "@iconify/react";
 import {
   Avatar,
   Box,
@@ -6,11 +10,6 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import { Icon } from "@iconify/react";
-import { ILayoutIcons } from "../../Interfaces";
-import Call from "@iconify/icons-fluent/call-24-regular";
-import Video from "@iconify/icons-fluent/video-24-regular";
-import Search from "@iconify/icons-fluent/search-24-regular";
 
 export default function ChatHeader() {
   const [iconCall, iconsVideo, iconSearch] = [
@@ -41,7 +40,7 @@ export default function ChatHeader() {
         padding: "12px 24px",
         backgroundColor: "#2C2C2C",
         border: "1px #1D1D1D solid",
-        height: '50px',
+        height: "50px",
       }}
     >
       <Box
