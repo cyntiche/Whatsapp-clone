@@ -6,7 +6,7 @@ import TitleBar from './components/TitleBar/TitleBar';
 
 function App() {
   return (
-    <Box style={{ height: '100svh', display:"grid", gridTemplateRows:"auto 1fr"}}>
+    <Box style={{ height: '100svh', display:"grid", gridTemplateRows:"auto 1fr",overflow: 'hidden' }}>
       <TitleBar />
       <Box style={{ display: "grid", gridTemplateColumns: "40px 25% auto" }}>
       <SideBar />

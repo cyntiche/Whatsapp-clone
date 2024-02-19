@@ -37,7 +37,7 @@ export default function ChatHeader() {
         gridTemplateColumns: "1fr auto",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "12px 24px",
+        padding: "10px 24px",
         backgroundColor: "#2C2C2C",
         border: "1px #1D1D1D solid",
         height: "50px",

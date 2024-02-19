@@ -121,7 +121,7 @@ const Contacts = () => {
         sx={{
           width: "100%",
           boxSizing: "border-box",
-          padding: "16px 16px",
+          padding: "10px 16px",
         }}
       >
         <Input
