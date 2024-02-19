@@ -41,6 +41,7 @@ export default function ChatHeader() {
         padding: "12px 24px",
         backgroundColor: "#2C2C2C",
         border: "1px #1D1D1D solid",
+        height: '50px',
       }}
     >
       <Box
